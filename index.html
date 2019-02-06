@@ -5,35 +5,6 @@ body {
   font-family: monospace;
   text-align: center;
   background-color: #373737;
-	
-background: linear-gradient(#00000, #990000, #000099, #cc0099);
-background-size: 1822% 2222%;
-
--webkit-animation: rainbow 38s ease infinite;
--z-animation: rainbow 38s ease infinite;
--o-animation: rainbow 38s ease infinite;
-  animation: rainbow 38s ease infinite;}
-
-@-webkit-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@-moz-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@-o-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@keyframes rainbow { 
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
  }
 	.Stuff
 {
@@ -51,9 +22,11 @@ background-size: 1822% 2222%;
  <div class="stuff">
 	 <p>shop!hook</p><br>
               
-    <input type="text" placeholder="Enter Username" name="acc" required><br>
-   
-    <input type="password" placeholder="Passwd*" name="psw" required>
+<form name="login">
+	Acc*<input type="text" name="userid"/>
+	Passwd*<input type="password" name="pswrd"/>
+<input type="button" onclick="check(this.form)" value="Login"/>
+</form>
     <p>
 ---
     </p>
@@ -64,6 +37,19 @@ background-size: 1822% 2222%;
   	var audio = document.getElementById("new");
   	audio.volume = 0.1;
       		</script>
+<script language="javascript">
+function check(form)
+{
+ if(form.userid.value == "Cutesie" && form.pswrd.value == "happydays")
+  {
+    window.open('dashboard.html')
+  }
+ else
+ {
+   alert("See the sourcecode for password")
+  }
+}
+</script>
   </div>
   </div>
 </body>
