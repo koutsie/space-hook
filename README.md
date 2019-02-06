@@ -1,2 +1,1 @@
-# loginthing
-A login thing cus i was bored.
+Some shait cus i was bored...
