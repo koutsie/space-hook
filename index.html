@@ -6,9 +6,20 @@ body {
   text-align: center;
   background-color: #373737;
  }
+	.Stuff
+{
+     position: absolute;
+     margin: auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+	 width:100%;
+}
 </style>
 <body bgcolor="#E6E6FA">
   <div id="wrapper">
+ <div class="stuff">
     shop!hook<br>
               <label for="acc"><b>Acc</b></label>
     <input type="text" placeholder="Enter Username" name="acc" required>
@@ -21,10 +32,12 @@ body {
     <audio autoplay loop id="shop">
   		<source src="/src/shop.mp3">
  <script>
+
   	var audio = document.getElementById("new");
   	audio.volume = 0.1;
       </script>
 </audio>
+  </div>
   </div>
 </body>
 </html>
