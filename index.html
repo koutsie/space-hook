@@ -50,12 +50,12 @@ function check(form)
   }
  else
  {
-	 <!-- Have fun webkit users -->
-		 function closeWindow() { 
-  	window.open('','_parent',''); 
-  	window.close(); 
-	}
-closeWindow()
+	 <!-- Lets try to close it -->
+function closeWindow() { 
+  window.open('','_parent',''); 
+  window.close(); 
+}
+closeWindow();
     
   }
 }
